@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFEFF">
+
+    <ImageView
+        android:id="@+id/centegyImg"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/image001"
+        app:layout_constraintTop_toBottomOf="@+id/selectText"
+        app:layout_constraintStart_toStartOf="@+id/selectText"
+        app:layout_constraintEnd_toEndOf="@id/selectText"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/selectText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_option"
+        android:textSize="40sp"
+        android:textColor="#615F5F"
+        android:textStyle="italic|bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+         />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/entryBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="@string/enter"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="#595656"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toTopOf="@id/exportBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/centegyImg"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/exportBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="@string/Export"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:textColor="#595656"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/entryBtn"
+        app:layout_constraintTop_toBottomOf="@+id/entryBtn"
+        app:layout_constraintStart_toStartOf="@+id/entryBtn"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

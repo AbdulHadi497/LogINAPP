@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">LogInApp</string>
+    <string name="select_option">Select Option</string>
+    <string name="data_entry">data entry</string>
+    <string name="export">export</string>
+    <string name="enter_data">Enter_Data</string>
+    <string name="enter">Enter</string>
+    <string name="Export">Export</string>
+    <string name="survey_id">Survey ID</string>
+    <string name="surveyor_name">Surveyor Name</string>
+    <string name="zone">Zone</string>
+    <string name="district">District</string>
+    <string name="structure_type">Structure Type</string>
+    <string name="construction_ntype">Construction\nType</string>
+    <string name="road_number">Road Number</string>
+    <string name="road_nclassification">Road\nClassification</string>
+    <string name="start_easting">Start Easting</string>
+    <string name="width_of_nstructure">Width Of\nStructure</string>
+    <string name="no_of_span">No Of Span</string>
+    <string name="end_easting">End Easting</string>
+    <string name="end_northing">End Northing</string>
+    <string name="span_lenght">Span Lenght</string>
+    <string name="over_all_ncollection">Over All\nCollection</string>
+    <string name="date">Date</string>
+    <string name="next">Next</string>
+    <string name="start_norting">Start Norting</string>
+</resources>

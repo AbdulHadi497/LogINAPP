@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/nextBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/surveyId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/survey_id"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:layout_marginStart="15dp"
+                app:layout_constraintBottom_toBottomOf="@+id/surveyEdt"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/surveyEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:background="@drawable/edittext"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/surveyId"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/surveyId"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/surveyorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/surveyor_name"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/surveyId"
+                app:layout_constraintStart_toStartOf="@+id/surveyId"
+                app:layout_constraintTop_toBottomOf="@+id/surveyId" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/surveyorNameEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:background="@drawable/edittext"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/surveyorName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/surveyorName"
+                app:layout_constraintTop_toTopOf="@id/surveyorName" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/zone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-60dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/zone"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/surveyorName"
+                app:layout_constraintStart_toStartOf="@+id/surveyorName"
+                app:layout_constraintTop_toBottomOf="@+id/surveyorName" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/zoneEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:background="@drawable/edittext"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/zone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/zone"
+                app:layout_constraintTop_toTopOf="@id/zone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/district"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-50dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/district"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/surveyorName"
+                app:layout_constraintHorizontal_bias="0.525"
+                app:layout_constraintStart_toStartOf="@+id/zone"
+                app:layout_constraintTop_toBottomOf="@+id/zone" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/districtEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:background="@drawable/edittext"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/district"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/district"
+                app:layout_constraintTop_toTopOf="@id/district" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/structureType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/structure_type"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/district"
+                app:layout_constraintStart_toStartOf="@+id/district"
+                app:layout_constraintTop_toBottomOf="@+id/district" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/structureTypeEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:background="@drawable/edittext"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/structureType"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/structureType"
+                app:layout_constraintTop_toTopOf="@id/structureType" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/constructionType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-15dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/construction_ntype"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/structureType"
+                app:layout_constraintStart_toStartOf="@+id/structureType"
+                app:layout_constraintTop_toBottomOf="@+id/structureType" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/constructionTypeEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:background="@drawable/edittext"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/constructionType"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/constructionType"
+                app:layout_constraintTop_toTopOf="@id/constructionType" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/roadClassification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/road_nclassification"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/constructionType"
+                app:layout_constraintStart_toStartOf="@+id/constructionType"
+                app:layout_constraintTop_toBottomOf="@+id/constructionType" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/roadClassificationEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:background="@drawable/edittext"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/roadClassification"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/roadClassification"
+                app:layout_constraintTop_toTopOf="@id/roadClassification" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/roadNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/road_number"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/roadClassification"
+                app:layout_constraintStart_toStartOf="@+id/roadClassification"
+                app:layout_constraintTop_toBottomOf="@+id/roadClassification" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/roadNumberEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:background="@drawable/edittext"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/roadNumber"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/roadNumber"
+                app:layout_constraintTop_toTopOf="@id/roadNumber" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/startEasting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-7dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/start_easting"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/roadNumber"
+                app:layout_constraintStart_toStartOf="@+id/roadNumber"
+                app:layout_constraintTop_toBottomOf="@+id/roadNumber" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/startEastingEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:background="@drawable/edittext"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/startEasting"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/startEasting"
+                app:layout_constraintTop_toTopOf="@id/startEasting" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/startNorthing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/start_norting"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/startEasting"
+                app:layout_constraintStart_toStartOf="@+id/startEasting"
+                app:layout_constraintTop_toBottomOf="@+id/startEasting" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/startNorthingEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:background="@drawable/edittext"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/startNorthing"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/startNorthing"
+                app:layout_constraintTop_toTopOf="@id/startNorthing" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/endNorthing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/end_northing"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/startNorthing"
+                app:layout_constraintStart_toStartOf="@+id/startNorthing"
+                app:layout_constraintTop_toBottomOf="@+id/startNorthing" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/endNorthingEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:background="@drawable/edittext"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/endNorthing"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/endNorthing"
+                app:layout_constraintTop_toTopOf="@id/endNorthing" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/endEasting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/end_easting"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/endNorthing"
+                app:layout_constraintStart_toStartOf="@+id/endNorthing"
+                app:layout_constraintTop_toBottomOf="@+id/endNorthing" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/endEastingEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:background="@drawable/edittext"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/endEasting"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/endEasting"
+                app:layout_constraintTop_toTopOf="@id/endEasting" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/noOfSpan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/no_of_span"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/endEasting"
+                app:layout_constraintStart_toStartOf="@+id/endEasting"
+                app:layout_constraintTop_toBottomOf="@+id/endEasting" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/noOfSpanEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:background="@drawable/edittext"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/noOfSpan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/noOfSpan"
+                app:layout_constraintTop_toTopOf="@id/noOfSpan" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/widthOfStructure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-15dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/width_of_nstructure"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/noOfSpan"
+                app:layout_constraintStart_toStartOf="@+id/noOfSpan"
+                app:layout_constraintTop_toBottomOf="@+id/noOfSpan" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/widthOfStructureEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:background="@drawable/edittext"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/widthOfStructure"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/widthOfStructure"
+                app:layout_constraintTop_toTopOf="@id/widthOfStructure" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/spanLenght"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/span_lenght"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/widthOfStructure"
+                app:layout_constraintStart_toStartOf="@+id/widthOfStructure"
+                app:layout_constraintTop_toBottomOf="@+id/widthOfStructure" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/spanLenghtEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:background="@drawable/edittext"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/spanLenght"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/spanLenght"
+                app:layout_constraintTop_toTopOf="@id/spanLenght" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/overAllCollection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-15dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/over_all_ncollection"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/spanLenght"
+                app:layout_constraintStart_toStartOf="@+id/spanLenght"
+                app:layout_constraintTop_toBottomOf="@+id/spanLenght" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/overAllCollectionEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:background="@drawable/edittext"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/overAllCollection"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/overAllCollection"
+                app:layout_constraintTop_toTopOf="@id/overAllCollection" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-30dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/date"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/overAllCollection"
+                app:layout_constraintStart_toStartOf="@+id/overAllCollection"
+                app:layout_constraintTop_toBottomOf="@+id/overAllCollection" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/dateEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:padding="5dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edittext"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                app:layout_constraintBottom_toBottomOf="@+id/date"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/date"
+                app:layout_constraintTop_toTopOf="@id/date" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/nextBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button"
+        android:text="@string/next"
+        android:textColor="#595656"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+         />
+</androidx.constraintlayout.widget.ConstraintLayout>
